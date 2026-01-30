@@ -9,6 +9,7 @@ import java.net.http.HttpResponse;
 public class Solicitudes_Api {
 
     public Respuesta_Moneda solicitaMoneda (String codigo) {
+        codigo = codigo.toUpperCase();
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/e1704b867986787e0bf14dd7/latest/" +
                 codigo);
 

@@ -4,11 +4,11 @@ public class Respuesta_Moneda {
     private String base_code;
     private Map<String, Double> conversion_rates;
 
-    public String getBase_code() {
+    public String getBaseCode() {
         return base_code;
     }
 
-    public Map<String, Double> getConversion_rates() {
+    public Map<String, Double> getConversionRates() {
         return conversion_rates;
     }
 }
