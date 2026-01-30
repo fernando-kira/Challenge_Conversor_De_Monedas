@@ -1,13 +1,14 @@
 import java.util.Map;
 
 public class Respuesta_Moneda {
-    private String codigo;
-    private double cantidad;
+    private String base_code;
+    private Map<String, Double> conversion_rates;
 
-    public double getCantidad() {
-        return cantidad;
+    public String getBase_code() {
+        return base_code;
     }
 
-    public Map<String, double> datosDeConversion = new Map<String, double>() {
+    public Map<String, Double> getConversion_rates() {
+        return conversion_rates;
     }
 }
