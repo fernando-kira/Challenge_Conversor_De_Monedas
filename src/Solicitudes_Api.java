@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -20,6 +22,6 @@ public class Solicitudes_Api {
                     .send(request, HttpResponse.BodyHandlers.ofString());
         } catch (Exception e) {
             throw new RuntimeException(e);
-        }
+        }return new Gson().fromJson(response.body(), Respuesta_Moneda.class);
     }
 }
